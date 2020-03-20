@@ -1,12 +1,13 @@
+
+</main>
 <footer class="footer mt-auto py-3">
   <div class="row">
-      <div class="col-md4"></div>
-      <div class="col-md4"></div>
-      <div class="col-md4">
-          <ul class="list-unstyled text-small ml-5">
-          <?php
-          $class=" ";
-            require 'menu.php'; ?>   
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+          <h5>Navigations</h5>
+          <ul class="list-unstyled text-small">
+          <?= nav_menu() ?>
           </ul>
       </div>
   </div>

@@ -1,5 +1,13 @@
 body {
     background-color:rgb(184, 225, 241);
+  
+}
+.row {
+    margin:25px !important;
+    width:100%;
+}
+.card {
+    width:100%;
 }
 li.active a {
     color:red !important;

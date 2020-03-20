@@ -1,4 +1,6 @@
-
+<?php
+require 'fonctions.php';
+?>
 <!doctype html>
 <html lang="en" class="h-100">
 
@@ -63,11 +65,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                   <?php
-                   $class="nav-link"; 
-                   require 'menu.php';
-                   ?>                  
+                   <?= nav_menu('nav-link') ?>              
                 </ul>
             </div>
         </nav>
     </header>
+    <main role="main" class="flex-shrink-0">
