@@ -41,18 +41,19 @@ function checkbox(string $name, string $value, array $data){
     if (isset($data[$name])&& in_array($value,$data[$name])){
         $attribute.=" checked";
     }
-    return <<<HTML
+    return <<<HT
     <input type='checkbox' name='{$name}[]' value='$value' $attribute>
-HTML;    
+HT;
 }
 // function qui réalise les radios
 function radio($name,$value,$data){
-    $attribute= '';
-    if (isset($data[$name])&& in_array($value,$data[$name])){$attribute.=" checked";}
-    return <<<HTML
-    <input type='radio' name='{$name}[]' value='$value' $attribute>
-HTML;    
-
+    $attributes= '';
+    if (isset($data[$name])&& in_array($value,$data[$name])){
+        $attributes.=" checked";
+    }
+    return <<<HTM
+    <input type='radio' name='{$name}[]' value='$value' $attributes>
+HTM;
 }
 
 function dump($variable){

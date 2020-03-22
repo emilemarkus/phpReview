@@ -28,7 +28,7 @@ require 'header.php';
 </p>
 <div class="row">
 <div class="col-4">
-    <form action="jeu.php" method="POST" name="glace">
+    <form action="index.php" method="POST" name="glace">
         <h5>Choisissez vos parfum : </h5>
         <?php foreach ($parfums as $parfum => $prix): ?>
         <div class="checkbox">
